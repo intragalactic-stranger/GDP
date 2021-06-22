@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>TeeVibes!</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="./img/TeeVibesIcon.png" type="image/icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css'></link>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css'></link>
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    
+  </head>
+  <body>
+
+
+<!-- main-navigation -->
+  <header>
+    <style>
+      #intro {
+        background-image: url(https://mdbootstrap.com/img/new/fluid/city/008.jpg);
+        height: 100vh;
+      }
+
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #intro {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" target="_blank" href="https://mdbootstrap.com/docs/standard/">
+          <strong>MDB</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#intro">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
+                target="_blank">Learn Bootstrap 5</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://mdbootstrap.com/docs/standard/" target="_blank">Download MDB UI KIT</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav d-flex flex-row">
+            <!-- Icons -->
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
+                target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+    <div id="intro" class="bg-image shadow-2-strong">
+      <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.8);">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-5 col-md-8">
+              <div class="bg-white  rounded-5 shadow-5-strong p-5">
+                <!-- Email input
+                <div class="form-outline mb-4">
+                  <input type="email" id="form1Example1" class="form-control" />
+                  <label class="form-label" for="form1Example1">Email address</label>
+                </div>
+
+                Password input
+                <div class="form-outline mb-4">
+                  <input type="password" id="form1Example2" class="form-control" />
+                  <label class="form-label" for="form1Example2">Password</label>
+                </div>
+
+                2 column grid layout for inline styling
+                <div class="row mb-4">
+                  <div class="col d-flex justify-content-center">
+                    Checkbox
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                      <label class="form-check-label" for="form1Example3">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col text-center">
+                    Simple link
+                    <a href="#!">Forgot password?</a>
+                  </div>
+                </div>
+
+                Submit button
+                <button type="submit" class="btn btn-primary btn-block">Sign in</button> -->
+                <!-- Pills navs -->
+<ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a
+        class="nav-link active"
+        id="tab-login"
+        data-mdb-toggle="pill"
+        href="#pills-login"
+        role="tab"
+        aria-controls="pills-login"
+        aria-selected="true"
+        >Login</a
+      >
+    </li>
+    <li class="nav-item" 
+    role="presentation">
+      <a
+        class="nav-link"
+        id="tab-register"
+        data-mdb-toggle="pill"
+        href="#pills-register"
+        role="tab"
+        aria-controls="pills-register"
+        aria-selected="false"
+        >Register</a
+      >
+    </li>
+  </ul>
+  <!-- Pills navs -->
+  
+  <!-- Pills content -->
+  <div class="tab-content">
+    <div
+      class="tab-pane fade show active"
+      id="pills-login"
+      role="tabpanel"
+      aria-labelledby="tab-login"
+    >
+      <form action="/signin" method="POST">
+        <div class="text-center mb-3">
+          <p>Sign in with:</p>
+          <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+  
+          <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-google"></i>
+          </button>
+  
+          <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-twitter"></i>
+          </button>
+  
+          <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-github"></i>
+          </button>
+        </div>
+  
+        <p class="text-center">or:</p>
+  
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="loginName" class="form-control"  name="email"   />
+          <label class="form-label" for="loginName">Email or username</label>
+        </div>
+  
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" id="loginPassword" class="form-control" name="password"      />   
+          <label class="form-label" for="loginPassword">Password</label>
+        </div>
+  
+        <!-- 2 column grid layout -->
+        <div class="row mb-4">
+          <div class="col-md-6 d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check mb-3 mb-md-0">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="loginCheck"
+                checked
+              />
+              <label class="form-check-label" for="loginCheck"> Remember me </label>
+            </div>
+          </div>
+  
+          <div class="col-md-6 d-flex justify-content-center">
+            <!-- Simple link -->
+            <a href="#!">Forgot password?</a>
+          </div>
+        </div>
+  
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+  
+        <!-- Register buttons -->
+        <div class="text-center">
+          <p>Not a member? <a href="#"">Register</a></p>
+        </div>
+      </form>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="pills-register"
+      role="tabpanel"
+      aria-labelledby="tab-register"
+    >
+      <form action="/signup" method="POST">
+        <div class="text-center mb-3">
+          <p>Sign up with:</p>
+          <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+  
+          <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-google"></i>
+          </button>
+  
+          <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-twitter"></i>
+          </button>
+  
+          <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-github"></i>
+          </button>
+        </div>
+  
+        <p class="text-center">or:</p>
+  
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="registerName" class="form-control" name="name"/>
+          <label class="form-label" for="registerName">Name</label>
+        </div>
+  
+        <!-- Username input
+        <div class="form-outline mb-4">
+          <input type="text" id="registerUsername" class="form-control" name=""/>
+          <label class="form-label" for="registerUsername">Username</label>
+        </div> -->
+  
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="registerEmail" class="form-control" name="email"/>
+          <label class="form-label" for="registerEmail">Email</label>
+        </div>
+  
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" id="registerPassword" class="form-control" name="password" />
+          <label class="form-label" for="registerPassword">Password</label>
+        </div>
+  
+        <!-- Repeat Password input
+        <div class="form-outline mb-4">
+          <input type="password" id="registerRepeatPassword" class="form-control" />
+          <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+        </div> -->
+  
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="registerCheck"
+            checked
+            aria-describedby="registerCheckHelpText"
+          />
+          <label class="form-check-label" for="registerCheck">
+            I have read and agree to the terms
+          </label>
+        </div>
+  
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-3">Sign up</button>
+      </form>
+    </div>
+  </div>
+  <!-- Pills content -->
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Footer-->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+                                                                   
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>                               
